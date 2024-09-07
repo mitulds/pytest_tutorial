@@ -36,4 +36,4 @@ jobs:
     - name: Run tests
       run: |
         source envgit/bin/activate
-        pytest src/test_add.py -v
+        pytest -v
