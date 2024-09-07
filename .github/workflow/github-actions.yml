@@ -22,7 +22,7 @@ jobs:
     - name: Install pytest
       run: |
         source envgit/bin/activate
-        pip install pytest
+        pip install pytest pandas
 
     - name: Run tests
       run: |
