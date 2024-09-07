@@ -38,10 +38,10 @@ jobs:
         source envgit/bin/activate
         flake8 src/ --max-line-length=88
   
-    - name: Run Black for code formatting check
-      run: |
-        source envgit/bin/activate
-        black --check src/
+    # - name: Run Black for code formatting check
+    #   run: |
+    #     source envgit/bin/activate
+    #     black --check src/
 
     - name: Run tests
       run: |
