@@ -1,6 +1,9 @@
 name: Python automation github actions sample learning
 run-name: ${{github.actor}} started the job
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
