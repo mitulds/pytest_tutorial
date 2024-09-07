@@ -1,1 +1,4 @@
+pytest
 pandas
+flake8
+black

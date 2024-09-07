@@ -33,6 +33,16 @@ jobs:
         source envgit/bin/activate
         pip install -r requirements.txt
 
+    - name: Run Flake8 for linting
+      run: |
+        source envgit/bin/activate
+        flake8 src/ --max-line-length=88
+  
+    - name: Run Black for code formatting check
+      run: |
+        source envgit/bin/activate
+        black --check src/
+
     - name: Run tests
       run: |
         source envgit/bin/activate
